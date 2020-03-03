@@ -1,0 +1,9 @@
+{
+  "builders": {
+    "protractor": {
+      "implementation": "./codeceptjs",
+      "schema": "./codeceptjs/schema.json",
+      "description": "Run CodeceptJS over a dev server."
+    }
+  }
+}

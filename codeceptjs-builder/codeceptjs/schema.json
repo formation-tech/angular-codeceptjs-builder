@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "CodeceptJS Target",
+  "description": "CodeceptJS target options for Build Facade.",
+  "type": "object",
+  "properties": {
+    "codeceptjsConfig": {
+      "type": "string",
+      "description": "The name of the CodeceptJS configuration file."
+    },
+    "devServerTarget": {
+      "type": "string",
+      "description": "Dev server target to run tests against.",
+      "pattern": "^([^:\\s]+:[^:\\s]+(:[^\\s]+)?)?$"
+    },
+    "port": {
+      "type": "number",
+      "description": "The port to use to serve the application."
+    },
+    "host": {
+      "type": "string",
+      "description": "Host to listen on."
+    },
+    "baseUrl": {
+      "type": "string",
+      "description": "Base URL for CodeceptJS to connect to."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "codeceptjsConfig"
+  ]
+}
